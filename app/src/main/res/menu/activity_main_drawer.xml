@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_message_status"
+            android:icon="@drawable/ic_menu_message_status"
+            android:title="@string/language_set_menu_message_status" />
+        <item
+            android:id="@+id/nav_whitelist"
+            android:icon="@drawable/ic_menu_whitelist"
+            android:title="@string/language_set_menu_whitelist" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_settings"
+            android:title="@string/language_set_menu_settings" />
+    </group>
+
+</menu>

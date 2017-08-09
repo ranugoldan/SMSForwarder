@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginTop="@dimen/spacing_medium">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/image_message_status"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="@dimen/spacing_small"
+            android:layout_marginRight="@dimen/spacing_small"
+            android:layout_gravity="center_vertical"
+            tools:src="@drawable/ic_message_pending"/>
+        <LinearLayout
+            android:paddingRight="@dimen/spacing_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/text_sender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:textStyle="bold"
+                    tools:text="INDOSAT"/>
+                <TextView
+                    android:id="@+id/text_datetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:textAlignment="textEnd"
+                    android:layout_gravity="end"
+                    tools:text="20/04/2017"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/text_content"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                tools:text="Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet "/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_marginTop="@dimen/spacing_medium"
+        style="@style/Divider" />
+</LinearLayout>
